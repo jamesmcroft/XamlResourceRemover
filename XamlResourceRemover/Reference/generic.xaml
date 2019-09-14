@@ -1,0 +1,55 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:maps="using:Windows.UI.Xaml.Controls.Maps">
+
+    <x:Double x:Key="ExpanderButtonHeight">24</x:Double>
+
+    <x:Int32 x:Key="ExpanderItemCharacterSpacing">-25</x:Int32>
+
+    <x:Boolean x:Key="IsApplicationFocusVisualKindReveal">False</x:Boolean>
+
+    <x:String x:Key="AppName">Test</x:String>
+
+    <FontFamily x:Key="ContentFontFamily">Segoe UI</FontFamily>
+
+    <Thickness x:Key="BottomBorderThickness">0,0,0,10</Thickness>
+
+    <FontWeight x:Key="ExpanderFontWeight">Normal</FontWeight>
+
+    <GridLength x:Key="ExpandButtonThemeWidthGridLength">48</GridLength>
+
+    <Color x:Key="AppBackgroundColor">#FF000000</Color>
+
+    <SolidColorBrush x:Key="AppBackgroundBrush" Color="{ThemeResource AppBackgroundColor}" />
+
+    <AcrylicBrush
+        x:Key="ControlTransientBackgroundBrush"
+        BackgroundSource="HostBackdrop"
+        FallbackColor="{StaticResource SystemChromeMediumLowColor}"
+        TintColor="{StaticResource SystemChromeAltHighColor}"
+        TintOpacity="0.8" />
+
+    <StaticResource x:Key="SystemControlDescriptionTextForegroundBrush" ResourceKey="SystemControlPageTextBaseMediumBrush" />
+    
+    <RevealBorderBrush
+        x:Key="SystemControlBackgroundAccentRevealBorderBrush"
+        FallbackColor="{ThemeResource SystemAccentColor}"
+        TargetTheme="Dark"
+        Color="{ThemeResource SystemAccentColor}" />   
+
+    <RevealBackgroundBrush
+        x:Key="SystemControlHighlightBaseMediumLowRevealAccentBackgroundBrush"
+        FallbackColor="{StaticResource SystemBaseMediumLowColor}"
+        TargetTheme="Dark"
+        Color="{ThemeResource SystemAccentColor}" />
+
+    <ListViewItemPresenterCheckMode x:Key="ListViewItemCheckMode">Inline</ListViewItemPresenterCheckMode>
+    
+    <Style TargetType="Button">
+    </Style>
+    
+    <Style x:Key="MyButtonStyle" TargetType="Button">
+    </Style>
+
+</ResourceDictionary>
